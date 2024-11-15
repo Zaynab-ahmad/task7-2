@@ -1,0 +1,12 @@
+.Brands {
+   border-bottom: 1px solid #d4dcff;
+   .brand-slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+   justify-content: center;}
+
+   
+}
+
+
