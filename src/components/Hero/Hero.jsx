@@ -12,7 +12,7 @@ export default function Hero() {
       <img
         src="/Images/heroShape1_2.webp"
         className="heroShape1 position-absolute start-0 z-1 sticky-bottom d-none d-lg-block"
-        alt="Hero Shape 1"
+        alt="Hero Shape 1" 
       />
       <img
         src="/Images/heroShape1_1.webp"
