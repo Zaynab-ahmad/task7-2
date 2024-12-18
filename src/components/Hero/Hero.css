@@ -1,7 +1,8 @@
 .homeHero {
   background-color: var(--primary-color);
   max-height: fit-content;
-  width: 93vw !important;
+  --home-hero-width: 93vw !important;
+  width: var(--home-hero-width);
   position: relative;
   border-radius: 50px 50px 0 50px;
   margin-top: 30px;
@@ -31,9 +32,10 @@
   .heroShape2 {
     width: 400px;
   }
-  .heroShape3 {
-    transform: translateY(50px);
-  }
+    .heroShape3 {
+      position: absolute;
+      bottom: -8% !important;
+    }
   .leftHero {
     top: 100px;
   }
@@ -50,17 +52,20 @@
     white-space: nowrap;
   }
 
-  .HeroImg {
-    width: 340px;
-    right: -100px !important;
-  }
+    .HeroImg {
+      width: 340px;
+      position: absolute;
+      bottom: 0;
+      right: -60%;
+      z-index: 2;
+    }
 
-  .HeroSolution {
+  .heroSolution {
     left: -54px;
     bottom: 299px;
   }
 
-  .HeroTechnology {
+  .heroTechnology {
     right: -14px;
     top: 262px;
   }
@@ -89,7 +94,32 @@
     }
   }
 }
+.heroSolution, .heroTechnology {
+  animation: float 3s ease-in-out infinite;
+  /* Add float animation */
+}
 
+/* Animation Keyframes */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Start at original position */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up slightly */
+  }
+}
+@media (max-width: 1536px) {
+  .HeroImg {
+    position: absolute;
+    right: -12%!important;
+    bottom: 0;
+  }
+}
 @media (max-width: 992px) {
   .homeHero {
     width: 100vw !important;

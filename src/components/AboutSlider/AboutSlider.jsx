@@ -2,6 +2,7 @@ import "./AboutSlider.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import asteriskIcon from '../../assets/Images/asterisk.svg';
 
 export default function AboutSlider() {
   const settings = {
@@ -21,6 +22,7 @@ export default function AboutSlider() {
       },
     ],
   };
+
   return (
     <div
       className="Brands py-4 bg-white w-100 text-black"
@@ -28,22 +30,21 @@ export default function AboutSlider() {
     >
       <Slider className="d-flex justify-content-around" {...settings}>
         <div className="d-flex align-items-center">
-          <img className="mx-1" src="/Images/asterisk.svg" alt="Brand 1" />
+          <img className="mx-1" src={asteriskIcon} alt="Brand 1" />
           <h3>Cyber Security</h3>
         </div>
         <div className="d-flex align-items-center">
-          <img className="mx-1" src="/Images/asterisk.svg" alt="Brand 2" />
+          <img className="mx-1" src={asteriskIcon} alt="Brand 2" />
           <h3>Technology</h3>
         </div>
         <div className="d-flex align-items-center">
-          <img className="mx-1" src="/Images/asterisk.svg" alt="Brand 3" />
+          <img className="mx-1" src={asteriskIcon} alt="Brand 3" />
           <h3>IT Solution</h3>
         </div>
         <div className="d-flex align-items-center">
-          <img className="mx-1" src="/Images/asterisk.svg" alt="Brand 4" />
+          <img className="mx-1" src={asteriskIcon} alt="Brand 4" />
           <h3>Data Security</h3>
         </div>
-        
       </Slider>
     </div>
   );

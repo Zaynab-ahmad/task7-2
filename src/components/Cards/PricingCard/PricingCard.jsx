@@ -3,6 +3,7 @@ import { CiCircleQuestion } from "react-icons/ci";
 import { GiCheckMark } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
+import pricingIcon from '../../../assets/Images/pricingIcon1_1.svg';
 
 const features = [
   {
@@ -51,7 +52,7 @@ export default function PricingCard({ isMonthly, dark }) {
           </h3>
         </div>
         <img
-          src="/Images/pricingIcon1_1.svg"
+          src={pricingIcon}
           alt="Pricing Icon"
           style={{ width: "40px" }}
         />
@@ -73,8 +74,6 @@ export default function PricingCard({ isMonthly, dark }) {
           backgroundColor: dark ? "black" : "white",
           color: dark ? "white" : "var(--primary-color)",
           border: dark ? "none" : "1px solid gray",
-          
-          
         }}
       >
         <span className="fw-bold" style={{fontSize:"12px"}}>GET STARTED NOW</span>  <FaArrowRightLong className="ms-2"  />

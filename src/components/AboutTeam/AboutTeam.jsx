@@ -1,28 +1,31 @@
 import AboutCard from "../Cards/AboutCard/AboutCard";
-
 import "./AboutTeam.css";
+import teamMember1 from '../../assets/Images/04.webp';
+import teamMember2 from '../../assets/Images/05.webp';
+import teamMember3 from '../../assets/Images/06.webp';
+import teamMember4 from '../../assets/Images/07.webp';
+
 export default function AboutTeam() {
   return (
     <div className="p-5 exContainer">
-      
       <div className="d-flex flex-wrap gap-2 justify-content-between">
         <AboutCard
-          src="/Images/04.webp"
+          src={teamMember1}
           name="Masirul Islam"
           role="web Designer"
         />
         <AboutCard
-          src="/Images/05.webp"
+          src={teamMember2}
           name="Masirul Islam"
           role="web Designer"
         />
         <AboutCard
-          src="/Images/06.webp"
+          src={teamMember3}
           name="Masirul Islam"
           role="web Designer"
         />
         <AboutCard
-          src="/Images/07.webp"
+          src={teamMember4}
           name="Masirul Islam"
           role="web Designer"
         />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; 
+import React, { useEffect, useState } from 'react';
 import './HomeNavBar.css';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -8,13 +8,14 @@ import { CiSearch } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
 import { GoChevronDown } from "react-icons/go";
 import RoundedButton from '../../Button/RoundedButton/RoundedButton';
+import logo from '../../../assets/Images/logo.svg';
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 50; 
+      const isScrolled = window.scrollY > 50;
       setScrolled(isScrolled);
     };
 
@@ -28,7 +29,7 @@ export default function NavBar() {
   return (
     <Navbar expand="lg" className={`home-navbar ${scrolled ? 'scrolled' : ''} position-fixed exContainer`}>
       <Navbar.Brand as={Link} to="/">
-        <img className="w-75" src="/Images/logo.svg" alt="Logo" />
+        <img className="w-75" src={logo} alt="Logo" />
       </Navbar.Brand>
 
       <div className="small-screen-icons">
@@ -41,7 +42,7 @@ export default function NavBar() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <NavDropdown title={<><span>Home</span> <GoChevronDown /></>} id="home-dropdown">
-            <NavDropdown.Item as={Link} to="/">Home</NavDropdown.Item> 
+            <NavDropdown.Item as={Link} to="/">Home</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>

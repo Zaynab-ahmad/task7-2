@@ -1,6 +1,7 @@
 import "./YoutubeVideo.css";
 import React, { useState } from 'react';
 import { FaPlayCircle } from "react-icons/fa";
+import videoThumbnail from '../../assets/Images/video1.png';
 
 export default function YoutubeVideo() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -18,11 +19,11 @@ export default function YoutubeVideo() {
       borderRadius: '24px',
       overflow: 'hidden',
     }}>
-      
+     
       <iframe
         width="100%"
         height="350px"
-        src="https://www.youtube.com/embed/l-aV3qt6dKw?autoplay=1&mute=1" // Start muted
+        src="https://www.youtube.com/embed/l-aV3qt6dKw?autoplay=1&mute=1"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -42,10 +43,9 @@ export default function YoutubeVideo() {
             justifyContent: 'center',
             alignItems: 'center',
           }}
-          
         >
           <img
-            src="/Images/video1.png"      
+            src={videoThumbnail}      
             alt="Video Thumbnail"
             style={{
               width: '100%',
@@ -65,7 +65,7 @@ export default function YoutubeVideo() {
               alignItems: 'center',
               zIndex: 1,
             }}
-            onClick={handlePlayVideo} 
+            onClick={handlePlayVideo}
           >
             <FaPlayCircle size={50} color="white" />
           </div>

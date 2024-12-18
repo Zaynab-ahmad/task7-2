@@ -5,24 +5,31 @@ import { GiCheckMark } from "react-icons/gi";
 import RoundedButton from "../Button/RoundedButton/RoundedButton";
 import { BsSend } from "react-icons/bs";
 import { SiTrustpilot } from "react-icons/si";
+import heroShape from '../../assets/Images/heroShape1_2.webp'
+import heroShape2 from '../../assets/Images/heroShape1_1.webp'
+import heroShape3 from '../../assets/Images/heroShape1_3.webp'
+import heroThumb from '../../assets/Images/heroThumb1_1.webp'
+import profileShape from '../../assets/Images/profileShape1_1.webp'
+import RoutatingText from '../RoutatingText/RoutatingText'
+
 
 export default function Hero() {
   return (
     <section className="homeHero text-white">
       <img
-        src="/Images/heroShape1_2.webp"
+        src={heroShape}
         className="heroShape1 position-absolute start-0 z-1 sticky-bottom d-none d-lg-block"
         alt="Hero Shape 1" 
       />
       <img
-        src="/Images/heroShape1_1.webp"
+        src={heroShape2}
         className="heroShape2 position-absolute bottom-0 end-0 z-1 sticky-bottom d-none d-lg-block"
         alt="Hero Shape 2"
       />
-      <div className="heroShape3 rounded-circle p-2 bg-white position-absolute start-50 z-1 sticky-bottom d-none d-lg-block">
-        <img src="/Images/heroShape1_3.webp" alt="heroShape1_3.webp" 
-        style={{width:"80px"}}/>
-      </div>
+      <div className="heroShape3 start-50 z-4 sticky-bottom bottom-0 d-none d-lg-block">
+  <RoutatingText />
+</div>
+
 
       <div className="exContainer d-flex justify-content-between g-3">
         <Row className="g-4">
@@ -81,7 +88,7 @@ export default function Hero() {
                       <Row className="p-2">
                         <Col xs={6} className="px-0 py-2">
                            <img 
-                            src="/Images/profileShape1_1.webp"
+                            src={profileShape}
                             alt="Profile"
                             style={{ objectFit: "cover", width:"100%" }}
                           />
@@ -107,7 +114,7 @@ export default function Hero() {
                       <Row className="p-2">
                         <Col xs={6} className="px-0 py-2">
                            <img 
-                            src="/Images/profileShape1_1.webp"
+                            src={profileShape}
                             alt="Profile"
                             style={{ objectFit: "cover", width:"100%" }}
                           />
@@ -135,13 +142,13 @@ export default function Hero() {
           
 
           <Col xs={12} lg={6} className="order-1 order-lg-2">
-            <div className="HeroImg position-relative d-flex justify-content-center align-items-end z-1">
+            <div className="HeroImg position-relative d-flex align-items-end z-1">
               <img
-                className=" w-100"
-                src="/Images/heroThumb1_1.webp"
+                className="w-100"
+                src={heroThumb}
                 alt="Hero Thumbnail"
               />
-              <div className="HeroSolution position-absolute z-1 d-none d-lg-block">
+              <div className="heroSolution position-absolute z-1 d-none d-lg-block">
                 <p
                   className="TextBox rounded-pill fw-bold text-center position-relative bottom-50 start-50 z-1"
                   style={{ backgroundColor: "#927cfe" }}
@@ -153,7 +160,7 @@ export default function Hero() {
                   style={{ color: "#927cfe" }}
                 />
               </div>
-              <div className="HeroTechnology position-absolute z-1 d-none d-lg-block">
+              <div className="heroTechnology position-absolute z-1 d-none d-lg-block">
                 <p
                   className="TextBox rounded-pill fw-bold text-center position-relative bottom-50 start-50 z-1"
                   style={{ backgroundColor: "#019fee" }}

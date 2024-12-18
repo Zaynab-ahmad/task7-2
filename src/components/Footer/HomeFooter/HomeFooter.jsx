@@ -1,19 +1,20 @@
 import RoundedButton from '../../Button/RoundedButton/RoundedButton';
 import './HomeFooter.css';
 import { Row, Col } from 'react-bootstrap';
+import ctaThumb from '../../../assets/Images/ctaThumb.webp';
 
 export default function HomeFooter() {
   return (
-    <div 
-      className='homeFooter exContainer' 
+    <div
+      className='homeFooter exContainer'
       style={{ backgroundColor: "var(--primary-color)", borderRadius: "24px" }}
     >
         <Row className='d-flex justify-content-center align-items-center position-relative g-4 p-4'>
             <Col md={4}>
-                <img 
-                  className="d-none d-md-block position-absolute bottom-0" 
-                  src="/Images/ctaThumb.webp" 
-                  alt="ctaThumb" 
+                <img
+                  className="d-none d-md-block position-absolute bottom-0"
+                  src={ctaThumb}
+                  alt="ctaThumb"
                   style={{ width: "200px" }}
                 />
             </Col>

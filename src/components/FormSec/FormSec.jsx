@@ -3,6 +3,7 @@ import "./FormSec.css";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import RoundedButton from "../Button/RoundedButton/RoundedButton";
+import videoImg from '../../assets/Images/video.webp';
 
 export default function FormSec() {
   return (
@@ -49,24 +50,24 @@ export default function FormSec() {
             </div>
           </div>
           <div
-      className="w-100 position-relative mt-auto"
-      style={{
-        height: "200px", 
-        overflow: "hidden", 
-      }}
-    >
-      <img
-        src="/Images/video.webp"
-        alt="video"
-        style={{
-          objectFit: "cover", 
-          width: "100%",
-          height: "100%",
-          borderBottomLeftRadius: "14px", 
-          borderBottomRightRadius: "14px", 
-        }}
-      />
-    </div>
+            className="w-100 position-relative mt-auto"
+            style={{
+              height: "200px",
+              overflow: "hidden",
+            }}
+          >
+            <img
+              src={videoImg}
+              alt="video"
+              style={{
+                objectFit: "cover",
+                width: "100%",
+                height: "100%",
+                borderBottomLeftRadius: "14px",
+                borderBottomRightRadius: "14px",
+              }}
+            />
+          </div>
         </Col>
         <Col xs={12} md={6}>
           <form className="d-flex flex-column pt-5 ps-3">

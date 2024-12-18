@@ -1,11 +1,14 @@
 import './AboutHero.css';
+import breadcrumbImg from '../../../assets/Images/breadcrumb.webp';
+import lineElement from '../../../assets/Images/line-element.webp';
+import element from '../../../assets/Images/element.webp';
 
 export default function AboutHero({ title, sec }) {
   return (
     <div className="aboutHero position-relative">
       <img
         className="coverImg"
-        src="/Images/breadcrumb.webp"
+        src={breadcrumbImg}
         alt="breadcrumb"
       />
 
@@ -17,13 +20,13 @@ export default function AboutHero({ title, sec }) {
       </div>
 
       <img
-        src="/Images/line-element.webp"
+        src={lineElement}
         alt="line-element"
         className="position-absolute"
         style={{ bottom: "0", right: "0", width: "300px" }}
       />
       <img
-        src="/Images/element.webp"
+        src={element}
         alt="element"
         className="position-absolute"
         style={{ bottom: "0", left: "7px" }}
@@ -31,4 +34,3 @@ export default function AboutHero({ title, sec }) {
     </div>
   );
 }
-

@@ -13,6 +13,9 @@ import { Col, Row } from "react-bootstrap";
 import HomeFooter from "../HomeFooter/HomeFooter";
 import AboutFooter from "../AboutFooter/AboutFooter";
 import { useLocation } from 'react-router-dom';
+import footerThumb1 from '../../../assets/Images/footerThumb1_1.webp';
+import footerThumb2 from '../../../assets/Images/footerThumb1_2.webp';
+
 
 
 export default function Footer() {
@@ -123,7 +126,7 @@ export default function Footer() {
                 <img
                   className="algin-self-center"
                   style={{ width: "60px", height: "60px" }}
-                  src="/Images/footerThumb1_1.webp"
+                  src={footerThumb1}
                   alt="footerThumb1_2"
                 />
 
@@ -143,8 +146,8 @@ export default function Footer() {
                 <img
                   className="algin-self-center"
                   style={{ width: "60px", height: "60px" }}
-                  src="/Images/footerThumb1_2.webp"
-                  alt="footerThumb1_1"
+                  src={footerThumb2}
+                  alt="footerThumb1_2"
                 />
 
                 <div className="mx-2" style={{ textAlign: "start" }}>
